@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.6ea0d88a.chunk.css",
+    "main.js": "/static/js/main.7419b4d7.chunk.js",
+    "main.js.map": "/static/js/main.7419b4d7.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.04ff4ba2.js",
+    "runtime-main.js.map": "/static/js/runtime-main.04ff4ba2.js.map",
+    "static/js/2.45f27ad5.chunk.js": "/static/js/2.45f27ad5.chunk.js",
+    "static/js/2.45f27ad5.chunk.js.map": "/static/js/2.45f27ad5.chunk.js.map",
+    "static/js/3.075da658.chunk.js": "/static/js/3.075da658.chunk.js",
+    "static/js/3.075da658.chunk.js.map": "/static/js/3.075da658.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.6ea0d88a.chunk.css.map": "/static/css/main.6ea0d88a.chunk.css.map",
+    "static/js/2.45f27ad5.chunk.js.LICENSE.txt": "/static/js/2.45f27ad5.chunk.js.LICENSE.txt",
+    "static/media/academic-cap.7798fa2e.svg": "/static/media/academic-cap.7798fa2e.svg",
+    "static/media/briefcase.56ac345a.svg": "/static/media/briefcase.56ac345a.svg",
+    "static/media/discord.d2a5072a.svg": "/static/media/discord.d2a5072a.svg",
+    "static/media/github.e21209f2.svg": "/static/media/github.e21209f2.svg",
+    "static/media/linkedin.fd9e4298.svg": "/static/media/linkedin.fd9e4298.svg",
+    "static/media/me2.1356bba5.jpg": "/static/media/me2.1356bba5.jpg",
+    "static/media/twitter.6c3a6b9a.svg": "/static/media/twitter.6c3a6b9a.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.04ff4ba2.js",
+    "static/js/2.45f27ad5.chunk.js",
+    "static/css/main.6ea0d88a.chunk.css",
+    "static/js/main.7419b4d7.chunk.js"
+  ]
+}
