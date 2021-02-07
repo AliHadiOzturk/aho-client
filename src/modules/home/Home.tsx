@@ -22,7 +22,7 @@ export const Home: React.FC = () => {
                     <div className="order-2 md:order-2 self-center">
                         <h1 className="text-2xl font-bold text-center">Hi, I'm Ali Hadi.</h1>
                         <p className="p-4">
-                            Hi, my name is Ali Hadi. I'm a developer. I think my self as a problem solver and passioante about learning. I'm currently working as full time developer.</p>
+                            Hi, my name is Ali Hadi. I'm a programmer. I think my self as a problem solver and passioante about learning.</p>
                     </div>
                 </div>
                 <div className="flex flex-col md:flex-row justify-center justify-items-center self-center md:divide-x-2 md:divide-dashed">
@@ -46,7 +46,6 @@ export const Home: React.FC = () => {
                         </div>
                         <div></div>
                     </div>
-                    {/* Hi, my name is Ali Hadi. I'm a developer. I think my self as a problem solver and passioante about learning. I'm currently working as full time developer.  */}
                     <div className="flex flex-col order-1 md:order-none justify-items-center h-auto pt-5 md:pl-5">
                         <Badge title="Programming Languages">
 
