@@ -34,7 +34,7 @@ export const Home: React.FC = () => {
                                     svg={briefcase}
                                     timePeriod="May 2018 - Current"
                                     title="FullStack Developer"
-                                    description="Work in various projects that inclued Angular, .Net Core, Spring">
+                                    description="Work in various projects that contains Angular, .Net Core, Spring">
                                 </AboutMeItem>
                                 <AboutMeItem leftText="Education"
                                     subTitle="Ufuk University"
@@ -75,14 +75,20 @@ export const Home: React.FC = () => {
                             <BadgeItem altText="git" src={badges.git} />
                             <BadgeItem altText="github" src={badges.github} />
                         </Badge>
-
-                        <Badge title="Technologies">
-                            <BadgeItem altText="firefox" src={badges.firefox} />
+                        <Badge title="Databases">
                             <BadgeItem altText="postgresql" src={badges.postgresql} />
-                            <BadgeItem altText="linux" src={badges.linux} />
-                            <BadgeItem altText="windows" src={badges.windows} />
+                        </Badge>
+                        <Badge title="Cloud">
                             <BadgeItem altText="azure" src={badges.azure} />
                             <BadgeItem altText="aws" src={badges.aws} />
+                        </Badge>
+                        <Badge title="Operation Systems">
+                            <BadgeItem altText="windows" src={badges.windows} />
+                            <BadgeItem altText="linux" src={badges.linux} />
+                        </Badge>
+
+                        <Badge title="Browsers">
+                            <BadgeItem altText="firefox" src={badges.firefox} />
                         </Badge>
                     </div>
                 </div>
