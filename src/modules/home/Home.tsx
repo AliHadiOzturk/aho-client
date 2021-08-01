@@ -30,9 +30,16 @@ export const Home: React.FC = () => {
                         <div className="m-8">
                             <AboutMe>
                                 <AboutMeItem leftText="Experience"
+                                    subTitle="Miltron Savunma ve Bilişim Teknolojileri A.Ş."
+                                    svg={briefcase}
+                                    timePeriod="July 2021 - Current"
+                                    title="Sotfware Development Expert"
+                                    description="Work in various projects that contains Angular, .Net Core, Spring">
+                                </AboutMeItem>
+                                <AboutMeItem leftText="Experience"
                                     subTitle="ArveOn"
                                     svg={briefcase}
-                                    timePeriod="May 2018 - Current"
+                                    timePeriod="May 2018 - July 2021"
                                     title="FullStack Developer"
                                     description="Work in various projects that contains Angular, .Net Core, Spring">
                                 </AboutMeItem>
