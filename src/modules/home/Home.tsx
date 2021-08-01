@@ -33,7 +33,7 @@ export const Home: React.FC = () => {
                                     subTitle="Miltron Savunma ve Bilişim Teknolojileri A.Ş."
                                     svg={briefcase}
                                     timePeriod="July 2021 - Current"
-                                    title="Sotfware Development Expert"
+                                    title="Software Development Expert"
                                     description="Work in various projects that contains Angular, .Net Core, Spring">
                                 </AboutMeItem>
                                 <AboutMeItem leftText="Experience"
