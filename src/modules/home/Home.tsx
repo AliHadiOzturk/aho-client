@@ -1,7 +1,7 @@
 
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import badges from '../../assets/badges.json'
-import me from '../../assets/images/me2.jpg'
+import me from '../../assets/images/me.jpg'
 import cap from '../../assets/svg/academic-cap.svg'
 import briefcase from '../../assets/svg/briefcase.svg'
 import discord from '../../assets/svg/discord.svg'
@@ -11,14 +11,34 @@ import twitter from '../../assets/svg/twitter.svg'
 import { AboutMe, AboutMeItem } from './AboutMe'
 import { Badge, BadgeItem } from './Badge'
 import { ContactMe } from './ContactMe'
+
 export const Home: React.FC = () => {
 
+    const [aboutMeData, setAboutMeData] = useState<[]>()
+
+    const openImage = () => {
+        window.open(me)
+    }
+
+    const getData = () => {
+        fetch('data.json')
+            .then(resp => {
+                return resp.json()
+            })
+            .then(data => {
+                setAboutMeData(data)
+            })
+    }
+
+    useEffect(() => {
+        getData()
+    }, [])
 
     return (
         <div className="home bg-gradient-to-r from-gray-50-300 to-gray-500-700 shadow-2xl ">
             <div className="md:relative container md:mx-auto p-12 h-full">
                 <div className="flex flex-col md:flex-row justify-center mx-auto  lg:w-1/2">
-                    <img className="rounded-3xl w-48 h-48 self-center" alt="Ali Hadi Öztürk" src={me} />
+                    <img className="rounded-3xl w-48 h-48 self-center cursor-pointer" alt="Ali Hadi Öztürk" onClick={openImage} src={me} />
                     <div className="order-2 md:order-2 self-center">
                         <h1 className="text-2xl font-bold text-center">Hi, I'm Ali Hadi.</h1>
                         <p className="p-4">
@@ -29,7 +49,19 @@ export const Home: React.FC = () => {
                     <div className="order-3 md:order-none">
                         <div className="m-8">
                             <AboutMe>
-                                <AboutMeItem leftText="Experience"
+                                {
+                                    aboutMeData?.map((data: any) => {
+                                        return (
+                                            <AboutMeItem leftText={data.type}
+                                                subTitle={data.subTitle}
+                                                svg={data.type === "Experience" ? briefcase : cap}
+                                                timePeriod={data.timePeriod}
+                                                title={data.title}
+                                                description={data.description} />
+                                        )
+                                    })
+                                }
+                                {/* <AboutMeItem leftText="Experience"
                                     subTitle="Miltron Savunma ve Bilişim Teknolojileri A.Ş."
                                     svg={briefcase}
                                     timePeriod="July 2021 - Current"
@@ -48,7 +80,7 @@ export const Home: React.FC = () => {
                                     svg={cap}
                                     timePeriod="2016 - 2018"
                                     title="Computer Programming"
-                                    description="" />
+                                    description="" /> */}
                             </AboutMe>
                         </div>
                         <div></div>

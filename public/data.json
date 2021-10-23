@@ -1,0 +1,23 @@
+[
+    {
+        "type": "Experience",
+        "name": "Miltron Savunma ve Bilişim Teknolojileri A.Ş.",
+        "timePeriod": "July 2021 - Current",
+        "title": "Software Development Expert",
+        "description": "Python, React, .NET, Docker, Redis, Angular"
+    },
+    {
+        "type": "Experience",
+        "name": "ArveOn",
+        "timePeriod": "May 2018 - Current",
+        "title": "FullStack Developer",
+        "description": "Work in various projects that contains Angular, .Net Core, Spring"
+    },
+    {
+        "type": "Education",
+        "name": "Ufuk University",
+        "timePeriod": "2016 - 2018",
+        "title": "Computer Programming",
+        "description": ""
+    }
+]
